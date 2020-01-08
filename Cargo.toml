@@ -1,0 +1,21 @@
+[package]
+name = "newlang"
+version = "0.1.0"
+authors = ["exfly <exflyg@gmail.com>"]
+
+[lib]
+name = "monkey_lib"
+path = "lib/monkey.rs"
+
+[[bin]]
+name = "newlangrepl"
+path = "repl/main.rs"
+
+[[bin]]
+name = "newlang"
+path = "src/main.rs"
+
+[dependencies]
+nom = "^4.0.0"
+clap = "~2.31.2"
+rustyline = "~6.0.0"
